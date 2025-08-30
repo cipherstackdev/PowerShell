@@ -1,0 +1,3 @@
+givenName,surname,name,displayName,samAccountName,userPrincipalName,password,path,office,title
+John,Doe,John Doe,John Doe,jdoe,jdoe@domain.local,P@ssw0rd!,"OU=Import,OU=Staff,DC=domain,DC=local",NYC,Staff
+Jane,Smith,Jane Smith,Jane Smith,jsmith,jsmith@domain.local,P@ssw0rd!,"OU=Import,OU=Staff,DC=domain,DC=local",LA,Director

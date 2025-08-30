@@ -1,0 +1,2 @@
+givenName,surname,grade,name,displayname,email,samaccountname,userprincipalname,path,password,office,title
+FirstName,LastName,-1,FirstName LastName,FirstName LastName,firstnamelastname@domain.org,firstnamelastname,firstnamelastname@domain.org,"OU=import,OU=Staff,DC=domain,DC=local",APassword,NYC,HQ Staff
