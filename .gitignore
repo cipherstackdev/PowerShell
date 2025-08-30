@@ -1,0 +1,8 @@
+# Ignore local data
+*.csv
+*.log
+*.bak
+
+# Ignore VS Code and PowerShell cache
+.vscode/
+*.ps1xml
