@@ -8,6 +8,7 @@ Use this before pushing scripts, examples, reports, screenshots, or docs to a pu
 - Tenant IDs unless they are intentionally public demo values.
 - Production domains, customer names, internal hostnames, internal IP addresses, or ticket numbers.
 - Real user exports, mailbox exports, audit logs, transcripts, or incident evidence.
+- Student rosters, student IDs, grade rosters, or school-year migration output.
 - Generated reports from customer or employer tenants.
 
 ## Safe Examples

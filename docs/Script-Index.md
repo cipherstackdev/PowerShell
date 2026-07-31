@@ -27,6 +27,8 @@ Quick map of the tools in this repo.
 | Area | Script | Use When |
 | --- | --- | --- |
 | Active Directory | `scripts/ActiveDirectory/BulkUserImport/New-BulkAdUsersFromCsv.ps1` | Creating on-prem AD users from CSV. |
+| Active Directory | `scripts/ActiveDirectory/SchoolYearMigration/Test-StudentYearMigrationPlan.ps1` | Auditing a student rollover CSV before OU and group changes. |
+| Active Directory | `scripts/ActiveDirectory/SchoolYearMigration/Invoke-StudentYearMigration.ps1` | Moving students to next-year OUs and updating grade groups from CSV. |
 | Entra groups | `scripts/Azure/GroupMembership/Add-UsersToGroupsFromCsv.ps1` | Adding users to Entra ID groups from CSV. |
 
 ## Security

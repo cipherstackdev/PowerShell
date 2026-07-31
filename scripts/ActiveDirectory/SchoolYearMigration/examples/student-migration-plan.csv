@@ -1,0 +1,4 @@
+StudentId,SamAccountName,UserPrincipalName,CurrentGrade,NextGrade,ExpectedCurrentOU,TargetOU,AddGroups,RemoveGroups,Notes
+100001,student.one,student.one@example.edu,06,07,"OU=Grade 06,OU=Students,DC=example,DC=edu","OU=Grade 07,OU=Students,DC=example,DC=edu","GG-Students-Grade07;GG-App-Math-07","GG-Students-Grade06;GG-App-Math-06",Promote to grade 7
+100002,student.two,student.two@example.edu,08,09,"OU=Grade 08,OU=Students,DC=example,DC=edu","OU=High School,OU=Students,DC=example,DC=edu","GG-Students-Grade09;GG-HS-Students","GG-Students-Grade08;GG-MS-Students",Move to high school OU
+100003,student.grad,student.grad@example.edu,12,Graduate,"OU=Grade 12,OU=Students,DC=example,DC=edu","OU=Graduated,OU=Students,DC=example,DC=edu","GG-Graduated-Students","GG-Students-Grade12;GG-HS-Students",Graduate account staging

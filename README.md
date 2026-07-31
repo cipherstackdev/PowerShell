@@ -9,6 +9,8 @@ These scripts are public examples. Review each script before use, test in a lab 
 | Script | Purpose | Permissions |
 | --- | --- | --- |
 | `scripts/ActiveDirectory/BulkUserImport/New-BulkAdUsersFromCsv.ps1` | Creates Active Directory users from a CSV with validation and `-WhatIf` support. | AD user creation permissions |
+| `scripts/ActiveDirectory/SchoolYearMigration/Test-StudentYearMigrationPlan.ps1` | Audits end-of-year student OU and group migration plans before changes. | AD read permissions |
+| `scripts/ActiveDirectory/SchoolYearMigration/Invoke-StudentYearMigration.ps1` | Moves student accounts between OUs and updates grade groups from CSV with `-WhatIf`. | AD move and group membership permissions |
 | `scripts/Azure/GroupMembership/Add-UsersToGroupsFromCsv.ps1` | Adds users to one or more Microsoft Entra ID groups from a CSV. | `User.Read.All`, `Group.Read.All`, `Group.ReadWrite.All` |
 | `scripts/Microsoft365/Identity/BulkUserImport/New-M365UsersFromCsv.ps1` | Creates Microsoft 365 cloud users from CSV with optional license assignment and `-WhatIf` support. | `User.ReadWrite.All`, `Directory.ReadWrite.All`, `Organization.Read.All` |
 | `scripts/Microsoft365/Identity/BreakGlass/Test-EntraBreakGlassAccounts.ps1` | Reviews expected emergency access accounts for state, roles, licenses, and sign-in evidence. | `User.Read.All`, `Directory.Read.All`, `RoleManagement.Read.Directory`, `Organization.Read.All` |
@@ -25,6 +27,7 @@ These scripts are public examples. Review each script before use, test in a lab 
 ## Examples
 
 - Bulk AD user import examples: `scripts/ActiveDirectory/BulkUserImport/examples/`
+- School year migration examples: `scripts/ActiveDirectory/SchoolYearMigration/examples/`
 - Microsoft Entra group import examples: `scripts/Azure/GroupMembership/examples/`
 - Microsoft 365 cloud user import examples: `scripts/Microsoft365/Identity/BulkUserImport/examples/`
 - Microsoft Entra break-glass account examples: `scripts/Microsoft365/Identity/BreakGlass/examples/`

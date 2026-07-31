@@ -1,0 +1,4 @@
+Timestamp,StudentId,SamAccountName,UserPrincipalName,CurrentGrade,NextGrade,Action,Target,Status,Message
+2026-07-31T08:00:00,100001,student.one,student.one@example.edu,06,07,MoveOU,"OU=Grade 07,OU=Students,DC=example,DC=edu",WhatIf,Move previewed.
+2026-07-31T08:00:00,100001,student.one,student.one@example.edu,06,07,RemoveGroup,GG-Students-Grade06,WhatIf,Group removal previewed.
+2026-07-31T08:00:00,100001,student.one,student.one@example.edu,06,07,AddGroup,GG-Students-Grade07,WhatIf,Group add previewed.
