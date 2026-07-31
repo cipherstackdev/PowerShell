@@ -1,6 +1,10 @@
 # Ignore local data
 *.csv
 !scripts/**/examples/*.csv
+private-output/
+exports/
+reports/
+transcripts/
 *.log
 *.bak
 

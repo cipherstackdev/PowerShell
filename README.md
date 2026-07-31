@@ -11,6 +11,7 @@ These scripts are public examples. Review each script before use, test in a lab 
 | `scripts/ActiveDirectory/BulkUserImport/New-BulkAdUsersFromCsv.ps1` | Creates Active Directory users from a CSV with validation and `-WhatIf` support. | AD user creation permissions |
 | `scripts/Azure/GroupMembership/Add-UsersToGroupsFromCsv.ps1` | Adds users to one or more Microsoft Entra ID groups from a CSV. | `User.Read.All`, `Group.Read.All`, `Group.ReadWrite.All` |
 | `scripts/Microsoft365/Identity/BulkUserImport/New-M365UsersFromCsv.ps1` | Creates Microsoft 365 cloud users from CSV with optional license assignment and `-WhatIf` support. | `User.ReadWrite.All`, `Directory.ReadWrite.All`, `Organization.Read.All` |
+| `scripts/Microsoft365/Identity/PrivilegedRoles/Export-EntraPrivilegedRoleAssignments.ps1` | Exports active Microsoft Entra privileged directory role assignments for access review. | `Directory.Read.All`, `RoleManagement.Read.Directory` |
 | `scripts/Microsoft365/GroupMembership/Get-M365GroupMembershipReport.ps1` | Exports Microsoft 365 group membership to CSV using Microsoft Graph. | `Group.Read.All`, `User.Read.All` |
 | `scripts/Microsoft365/Licensing/Get-M365LicenseAssignmentReport.ps1` | Exports license assignment, direct/group source, disabled plans, and assignment errors. | `User.Read.All`, `Organization.Read.All` |
 | `scripts/Microsoft365/Licensing/Update-M365UserLicensesFromCsv.ps1` | Assigns or removes direct Microsoft 365 user licenses from CSV with `-WhatIf` support. | `User.ReadWrite.All`, `Organization.Read.All` |
@@ -24,14 +25,20 @@ These scripts are public examples. Review each script before use, test in a lab 
 - Bulk AD user import examples: `scripts/ActiveDirectory/BulkUserImport/examples/`
 - Microsoft Entra group import examples: `scripts/Azure/GroupMembership/examples/`
 - Microsoft 365 cloud user import examples: `scripts/Microsoft365/Identity/BulkUserImport/examples/`
+- Microsoft Entra privileged role examples: `scripts/Microsoft365/Identity/PrivilegedRoles/examples/`
 - Microsoft 365 group report examples: `scripts/Microsoft365/GroupMembership/examples/`
 - Microsoft 365 license report examples: `scripts/Microsoft365/Licensing/examples/`
 - Microsoft 365 MFA and Conditional Access examples: `scripts/Microsoft365/Security/examples/`
 - Exchange mailbox forwarding and inbox rule examples: `scripts/Exchange/MailboxRules/examples/`
 - Mailbox rule change audit examples: `scripts/Purview/MailboxRuleChanges/README.md`
 
+## Workflows
+
+- Microsoft 365 assessment workflow: `docs/Microsoft365-Assessment-Workflow.md`
+
 ## Public Safety Notes
 
 - Do not commit tenant IDs, production domains, customer names, user exports, access tokens, or transcript output.
+- Keep real reports and exports in a private output folder outside the repo.
 - Scripts that change users, groups, devices, or security settings should support `-WhatIf`.
 - READMEs should include required modules, scopes, examples, and rollback notes where relevant.
