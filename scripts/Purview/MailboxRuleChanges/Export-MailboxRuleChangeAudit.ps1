@@ -21,10 +21,10 @@ Optional mailbox/user IDs to filter on.
 CSV output path.
 
 .EXAMPLE
-.\Export-MailboxRuleChangeAudit.ps1 -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -OutputPath .\mailbox-rule-changes.csv
+.\Export-MailboxRuleChangeAudit.ps1 -StartDate (Get-Date).AddDays(-30) -EndDate (Get-Date) -OutputPath .\examples\mailbox-rule-changes.csv
 
 .EXAMPLE
-.\Export-MailboxRuleChangeAudit.ps1 -StartDate '2026-07-01' -EndDate '2026-07-31 23:59:59' -UserIds user@example.com -OutputPath .\user-rule-changes.csv
+.\Export-MailboxRuleChangeAudit.ps1 -StartDate '2026-07-01' -EndDate '2026-07-31 23:59:59' -UserIds user@example.com -OutputPath .\examples\user-rule-changes.csv
 #>
 
 [CmdletBinding()]

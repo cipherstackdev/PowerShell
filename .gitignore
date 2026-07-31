@@ -1,5 +1,6 @@
 # Ignore local data
 *.csv
+!scripts/**/examples/*.csv
 *.log
 *.bak
 

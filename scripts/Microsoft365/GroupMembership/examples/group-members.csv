@@ -1,0 +1,3 @@
+GroupDisplayName,GroupId,MemberId,MemberType,DisplayName,UserPrincipalName,Mail
+All Staff,11111111-2222-3333-4444-555555555555,aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee,#microsoft.graph.user,Alex Example,alex.example@example.com,alex.example@example.com
+All Staff,11111111-2222-3333-4444-555555555555,bbbbbbbb-cccc-dddd-eeee-ffffffffffff,#microsoft.graph.user,Jordan Sample,jordan.sample@example.com,jordan.sample@example.com

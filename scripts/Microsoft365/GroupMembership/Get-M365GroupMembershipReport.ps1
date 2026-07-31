@@ -14,7 +14,7 @@ CSV output path.
 
 .EXAMPLE
 Connect-MgGraph -Scopes "Group.Read.All","User.Read.All"
-.\Get-M365GroupMembershipReport.ps1 -Group "All Staff" -OutputPath .\group-members.csv
+.\Get-M365GroupMembershipReport.ps1 -Group "All Staff" -OutputPath .\examples\group-members.csv
 #>
 
 [CmdletBinding()]

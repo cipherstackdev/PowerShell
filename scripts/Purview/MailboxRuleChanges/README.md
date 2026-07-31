@@ -14,6 +14,7 @@ This is useful when investigating requests such as:
 | File | Purpose |
 | --- | --- |
 | `Export-MailboxRuleChangeAudit.ps1` | Searches the unified audit log and exports normalized mailbox rule change records to CSV. |
+| `examples/mailbox-rule-changes.csv` | Sanitized example output. |
 
 ## Requirements
 
@@ -35,7 +36,7 @@ Last 30 days:
 .\Export-MailboxRuleChangeAudit.ps1 `
   -StartDate (Get-Date).AddDays(-30) `
   -EndDate (Get-Date) `
-  -OutputPath .\mailbox-rule-changes.csv
+  -OutputPath .\examples\mailbox-rule-changes.csv
 ```
 
 Specific mailbox and date range:
@@ -45,7 +46,7 @@ Specific mailbox and date range:
   -StartDate '2026-07-01' `
   -EndDate '2026-07-31 23:59:59' `
   -UserIds user@example.com `
-  -OutputPath .\user-rule-changes.csv
+  -OutputPath .\examples\user-rule-changes.csv
 ```
 
 ## Operations Searched

@@ -23,10 +23,10 @@ Name of the group column (default 'group').
 Name of the user principal name column (default 'userPrincipalName').
 
 .EXAMPLE
-.\Add-UsersToGroupsFromCsv.ps1 -CsvPath .\users-to-groups.csv -Verbose
+.\Add-UsersToGroupsFromCsv.ps1 -CsvPath .\examples\users-to-single-group.csv -Verbose -WhatIf
 
 .EXAMPLE
-.\Add-UsersToGroupsFromCsv.ps1 -CsvPath .\users-to-groups.csv -Delimiter ';' -GroupSeparator '|' -Verbose
+.\Add-UsersToGroupsFromCsv.ps1 -CsvPath .\examples\users-to-multiple-groups.csv -GroupSeparator ';' -Verbose -WhatIf
 #>
 
 [CmdletBinding(SupportsShouldProcess)]
