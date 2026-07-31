@@ -28,10 +28,10 @@ If set, marks the password as never expiring.
 If set, requires the user to change password at next logon.
 
 .EXAMPLE
-.\New-BulkAdUser.ps1 -CsvPath .\Users.csv -Verbose -WhatIf
+.\New-BulkAdUsersFromCsv.ps1 -CsvPath .\examples\users.csv -Verbose -WhatIf
 
 .EXAMPLE
-.\New-BulkAdUser.ps1 -CsvPath .\Users.csv -Server dc01.domain.local -PasswordNeverExpires -LogPath .\created.log
+.\New-BulkAdUsersFromCsv.ps1 -CsvPath .\examples\users.csv -Server dc01.example.local -ForceChangeAtLogon -LogPath .\created.log
 #>
 
 [CmdletBinding(SupportsShouldProcess, ConfirmImpact='High')]
@@ -86,6 +86,18 @@ function Add-IfValue {
     if ($null -ne $Value -and $Value -ne '') { $Target[$Name] = $Value }
 }
 
+function Get-AdCommandBaseParams {
+    $base = @{}
+    Add-IfValue $base 'Server' $Server
+    Add-IfValue $base 'Credential' $Credential
+    return $base
+}
+
+function Escape-AdFilterValue {
+    param([string]$Value)
+    return $Value.Replace("'", "''")
+}
+
 # Process each row
 foreach ($r in $rows) {
     # Trim commonly used fields; property names are case-insensitive
@@ -108,9 +120,9 @@ foreach ($r in $rows) {
 
     # Validate the OU/DN exists & is reachable
     try {
-        $ouParams = @{ Identity = $pathDN; ErrorAction = 'Stop' }
-        if ($Server)     { $ouParams.Server     = $Server }
-        if ($Credential) { $ouParams.Credential = $Credential }
+        $ouParams = Get-AdCommandBaseParams
+        $ouParams['Identity'] = $pathDN
+        $ouParams['ErrorAction'] = 'Stop'
         [void](Get-ADObject @ouParams)
     } catch {
         Write-Error "Path DN not found or inaccessible for $upn: $pathDN. $($_.Exception.Message)"
@@ -120,8 +132,12 @@ foreach ($r in $rows) {
     # Skip if user already exists (check UPN and sAMAccountName)
     $exists = $null
     try {
-        $flt = "UserPrincipalName -eq '$upn' -or SamAccountName -eq '$sam'"
-        $exists = Get-ADUser -Filter $flt -Server $Server -Credential $Credential -ErrorAction SilentlyContinue
+        $upnFilter = Escape-AdFilterValue -Value $upn
+        $samFilter = Escape-AdFilterValue -Value $sam
+        $lookupParams = Get-AdCommandBaseParams
+        $lookupParams['Filter'] = "UserPrincipalName -eq '$upnFilter' -or SamAccountName -eq '$samFilter'"
+        $lookupParams['ErrorAction'] = 'SilentlyContinue'
+        $exists = Get-ADUser @lookupParams
     } catch {
         # Non-fatal; continue to attempt creation
     }

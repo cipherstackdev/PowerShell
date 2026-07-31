@@ -1,0 +1,3 @@
+givenName,surname,name,displayName,email,samAccountName,userPrincipalName,path,password,office,title
+Alex,Example,Alex Example,Alex Example,alex.example@example.com,aexample,alex.example@example.com,"OU=Import,OU=Users,DC=example,DC=local",ChangeMe-Example-001,Main Office,Staff
+Jordan,Sample,Jordan Sample,Jordan Sample,jordan.sample@example.com,jsample,jordan.sample@example.com,"OU=Import,OU=Users,DC=example,DC=local",ChangeMe-Example-002,Main Office,Supervisor
