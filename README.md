@@ -38,6 +38,12 @@ These scripts are public examples. Review each script before use, test in a lab 
 ## Workflows
 
 - Microsoft 365 assessment workflow: `docs/Microsoft365-Assessment-Workflow.md`
+- Script index: `docs/Script-Index.md`
+- Public safety checklist: `docs/Public-Safety-Checklist.md`
+
+## Validation
+
+This repo includes a GitHub Actions workflow that runs PSScriptAnalyzer against `scripts/` on pushes and pull requests.
 
 ## Public Safety Notes
 
