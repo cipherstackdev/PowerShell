@@ -1,0 +1,11 @@
+UserPrincipalName         : user@example.com
+LitigationHoldEnabled     : True
+LitigationHoldDuration    : Unlimited
+LitigationHoldOwner       : Legal Team
+DeletedItemsRetentionDays : 30
+SingleItemRecoveryEnabled : True
+ArchiveStatus             : Active
+AuditEnabled              : True
+AuditLogAgeLimitDays      : 365
+TotalItemSize             : 12.3 GB
+ItemCount                 : 45210

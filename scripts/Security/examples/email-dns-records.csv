@@ -1,0 +1,5 @@
+Domain,RecordType,Name,Status,Values,Finding
+example.com,MX,example.com,Pass,10 mail.example.com,MX records found.
+example.com,SPF,example.com,Pass,"v=spf1 include:spf.example.net -all",SPF record found.
+example.com,DMARC,_dmarc.example.com,Warn,"v=DMARC1; p=none; rua=mailto:dmarc@example.com",DMARC exists but is not enforcing quarantine or reject.
+example.com,DKIM,selector1._domainkey.example.com,Pass,"v=DKIM1; k=rsa; p=examplePublicKey",DKIM selector record found.

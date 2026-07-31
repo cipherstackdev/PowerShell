@@ -16,6 +16,7 @@ These scripts are public examples. Review each script before use, test in a lab 
 | `scripts/Microsoft365/Licensing/Get-M365LicenseAssignmentReport.ps1` | Exports license assignment, direct/group source, disabled plans, and assignment errors. | `User.Read.All`, `Organization.Read.All` |
 | `scripts/Microsoft365/Licensing/Update-M365UserLicensesFromCsv.ps1` | Assigns or removes direct Microsoft 365 user licenses from CSV with `-WhatIf` support. | `User.ReadWrite.All`, `Organization.Read.All` |
 | `scripts/Microsoft365/Security/Export-MfaConditionalAccessReadiness.ps1` | Exports MFA registration readiness and Conditional Access policy summaries. | `Reports.Read.All`, `Policy.Read.All`, `User.Read.All` |
+| `scripts/Exchange/LitigationHoldAndAuditing/Set-MailboxHoldAndAudit.ps1` | Applies litigation hold, mailbox auditing, retention, and optional archive settings. | Exchange admin permissions |
 | `scripts/Exchange/MailboxRules/Export-MailboxForwardingAndInboxRules.ps1` | Exports mailbox forwarding settings and inbox rules with redirect/delete/move actions. | Exchange mailbox read permissions |
 | `scripts/Purview/MailboxRuleChanges/Export-MailboxRuleChangeAudit.ps1` | Exports Purview audit records for mailbox inbox rule changes. | Unified audit log search permissions |
 | `scripts/Security/Test-EmailDnsRecords.ps1` | Checks MX, SPF, DMARC, and DKIM DNS records for a domain. | None |
@@ -29,8 +30,10 @@ These scripts are public examples. Review each script before use, test in a lab 
 - Microsoft 365 group report examples: `scripts/Microsoft365/GroupMembership/examples/`
 - Microsoft 365 license report examples: `scripts/Microsoft365/Licensing/examples/`
 - Microsoft 365 MFA and Conditional Access examples: `scripts/Microsoft365/Security/examples/`
+- Exchange litigation hold and mailbox auditing examples: `scripts/Exchange/LitigationHoldAndAuditing/examples/`
 - Exchange mailbox forwarding and inbox rule examples: `scripts/Exchange/MailboxRules/examples/`
 - Mailbox rule change audit examples: `scripts/Purview/MailboxRuleChanges/README.md`
+- Email DNS record examples: `scripts/Security/examples/`
 
 ## Workflows
 
