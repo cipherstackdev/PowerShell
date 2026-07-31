@@ -1,0 +1,3 @@
+UserPrincipalName,DisplayName,Owner,AccountEnabled,UserType,CreatedDateTime,LastSignIn,AssignedLicenses,ActiveRoles,Finding,Notes
+breakglass-admin-1@example.com,Break Glass Admin 1,Security Team,True,Member,2026-01-01T20:00:00Z,,,"Global Administrator",Review,Primary emergency access account
+breakglass-admin-2@example.com,Break Glass Admin 2,IT Leadership,True,Member,2026-01-01T20:00:00Z,2026-07-15T18:00:00Z,ENTERPRISEPACK,"Global Administrator;Privileged Role Administrator","License assigned; review whether emergency account should be unlicensed; Recent sign-in value present; confirm expected emergency use",Secondary emergency access account

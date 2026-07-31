@@ -38,6 +38,10 @@ Connect-ExchangeOnline
 .\scripts\Microsoft365\Identity\PrivilegedRoles\Export-EntraPrivilegedRoleAssignments.ps1 `
   -OutputPath .\private-output\privileged-role-assignments.csv
 
+.\scripts\Microsoft365\Identity\BreakGlass\Test-EntraBreakGlassAccounts.ps1 `
+  -CsvPath .\scripts\Microsoft365\Identity\BreakGlass\examples\break-glass-accounts.csv `
+  -OutputPath .\private-output\break-glass-review.csv
+
 .\scripts\Exchange\MailboxRules\Export-MailboxForwardingAndInboxRules.ps1 `
   -OutputDirectory .\private-output\mailbox-rules
 ```
@@ -45,6 +49,7 @@ Connect-ExchangeOnline
 ## 3. Review
 
 - Privileged roles: confirm standing access, disabled-account assignments, and admin group membership.
+- Break-glass accounts: confirm owners, active privileged roles, license state, and expected sign-in activity.
 - MFA readiness: identify users not registered or not capable before enforcing stricter policies.
 - Conditional Access: check disabled/report-only policies, broad exclusions, and legacy authentication blocks.
 - Licensing: find disabled users with direct licenses and assignment errors.

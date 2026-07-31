@@ -7,6 +7,7 @@ Quick map of the tools in this repo.
 | Area | Script | Use When |
 | --- | --- | --- |
 | Cloud user onboarding | `scripts/Microsoft365/Identity/BulkUserImport/New-M365UsersFromCsv.ps1` | Creating Microsoft 365 users from a reviewed CSV import. |
+| Emergency access | `scripts/Microsoft365/Identity/BreakGlass/Test-EntraBreakGlassAccounts.ps1` | Reviewing expected break-glass accounts for state, roles, licenses, and recent sign-in evidence. |
 | Privileged roles | `scripts/Microsoft365/Identity/PrivilegedRoles/Export-EntraPrivilegedRoleAssignments.ps1` | Reviewing active Entra privileged role membership. |
 | Group membership | `scripts/Microsoft365/GroupMembership/Get-M365GroupMembershipReport.ps1` | Exporting Microsoft 365 group membership for review. |
 | Licensing | `scripts/Microsoft365/Licensing/Get-M365LicenseAssignmentReport.ps1` | Finding license assignments, source, and errors. |
