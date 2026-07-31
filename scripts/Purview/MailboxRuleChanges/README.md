@@ -58,6 +58,13 @@ Specific mailbox and date range:
 - `Disable-InboxRule`
 - `UpdateInboxRules`
 
+## Suggested Triage
+
+- Look for rule creation shortly after suspicious sign-in activity.
+- Review rules that redirect, forward, move, or delete messages.
+- Confirm whether rule changes were made by the mailbox owner, delegate, admin, or compromised session.
+- Compare this report with the current-state mailbox forwarding and inbox-rule report under `scripts/Exchange/MailboxRules`.
+
 ## Public Safety Notes
 
 - Do not commit exported audit reports.

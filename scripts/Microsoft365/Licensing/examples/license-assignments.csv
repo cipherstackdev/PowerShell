@@ -1,0 +1,4 @@
+DisplayName,UserPrincipalName,AccountEnabled,Department,JobTitle,UsageLocation,SkuPartNumber,SkuId,AssignmentSource,AssignedByGroup,DisabledPlans,Error,LastUpdatedDateTime
+Alex Admin,alex.admin@example.com,True,IT,Systems Administrator,US,ENTERPRISEPACK,00000000-0000-0000-0000-000000000001,Group,11111111-1111-1111-1111-111111111111,,,
+Casey Lee,casey.lee@example.com,True,Operations,Operations Coordinator,US,BUSINESS_PREMIUM,00000000-0000-0000-0000-000000000002,Direct,,,,
+Disabled Archive,disabled.archive@example.com,False,Records,Archive Account,US,ENTERPRISEPACK,00000000-0000-0000-0000-000000000001,Direct,,,,

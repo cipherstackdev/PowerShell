@@ -1,0 +1,3 @@
+Timestamp,UserPrincipalName,Action,Status,Message
+2026-07-31T08:00:00,alex.admin@example.com,CreateUser,WhatIf,User creation previewed.
+2026-07-31T08:00:00,alex.admin@example.com,AssignLicense,WhatIf,License assignment previewed for ENTERPRISEPACK.

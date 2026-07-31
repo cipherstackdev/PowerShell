@@ -1,0 +1,3 @@
+UserPrincipalName,Action,SkuPartNumber
+alex.admin@example.com,Assign,ENTERPRISEPACK
+casey.lee@example.com,Remove,BUSINESS_PREMIUM

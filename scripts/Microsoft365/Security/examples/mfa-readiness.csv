@@ -1,0 +1,3 @@
+UserPrincipalName,UserDisplayName,UserType,AccountEnabled,Department,JobTitle,IsAdmin,IsMfaRegistered,IsMfaCapable,IsPasswordlessCapable,IsSsprRegistered,IsSsprEnabled,IsSsprCapable,DefaultMfaMethod,MethodsRegistered,SystemPreferredAuthenticationMethods,UserPreferredMethodForSecondaryAuthentication,ReadinessFinding
+alex.admin@example.com,Alex Admin,member,True,IT,Systems Administrator,True,True,True,True,True,True,True,microsoftAuthenticatorPush,microsoftAuthenticatorPush;fido2SecurityKey,microsoftAuthenticatorPush;fido2SecurityKey,microsoftAuthenticatorPush,Ready
+casey.lee@example.com,Casey Lee,member,True,Operations,Operations Coordinator,False,False,False,False,False,True,False,,,,MFA not registered

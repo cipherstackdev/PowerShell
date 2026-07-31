@@ -1,0 +1,3 @@
+UserPrincipalName,DisplayName,MailNickname,GivenName,Surname,Password,UsageLocation,LicenseSkuPartNumber,JobTitle,Department,OfficeLocation,MobilePhone,BusinessPhones
+alex.admin@example.com,Alex Admin,alex.admin,Alex,Admin,ChangeMe-Example-001!,US,ENTERPRISEPACK,Systems Administrator,IT,HQ,+15550101001,+15550102001
+casey.lee@example.com,Casey Lee,casey.lee,Casey,Lee,ChangeMe-Example-002!,US,BUSINESS_PREMIUM,Operations Coordinator,Operations,Branch A,+15550101002,+15550102002

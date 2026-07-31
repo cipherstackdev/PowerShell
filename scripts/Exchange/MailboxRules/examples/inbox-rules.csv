@@ -1,0 +1,3 @@
+Mailbox,RuleName,Enabled,Priority,ForwardTo,ForwardAsAttachmentTo,RedirectTo,DeleteMessage,SoftDeleteMessage,MoveToFolder,StopProcessingRules,Finding,Error
+casey.lee@example.com,Forward invoices,True,1,external-review@example.net,,,False,False,,True,Review rule action,
+alex.admin@example.com,Move alerts,True,2,,,,False,False,\Inbox\Admin Alerts,False,Review rule action,

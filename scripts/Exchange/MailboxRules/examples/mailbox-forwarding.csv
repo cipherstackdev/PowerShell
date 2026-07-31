@@ -1,0 +1,3 @@
+DisplayName,UserPrincipalName,PrimarySmtpAddress,RecipientTypeDetails,ForwardingSmtpAddress,ForwardingAddress,DeliverToMailboxAndForward,ForwardingFinding
+Alex Admin,alex.admin@example.com,alex.admin@example.com,UserMailbox,,,False,None
+Casey Lee,casey.lee@example.com,casey.lee@example.com,UserMailbox,smtp:external-review@example.net,,True,Forwarding configured
